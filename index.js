@@ -9,13 +9,13 @@
 
 for (let i = 0; i < 11; i++) {
     if (i === 0) {
-        console.log( i + ' - это ноль');
+        console.log(i + ' - это ноль');
     }
-    else if ( i % 2 === 0) {
-        console.log( i + ' - четное число');
+    else if (i % 2 === 0) {
+        console.log(i + ' - четное число');
     }
     else {
-        console.log( i + ' - нечетное число');
+        console.log(i + ' - нечетное число');
     }
 }
 
@@ -24,7 +24,7 @@ for (let i = 0; i < 11; i++) {
 Сделайте из этого массива следующий [1, 2, 3, 6, 7]*/
 
 const arr = [1, 2, 3, 4, 5, 6, 7];
-arr.splice(3,2);
+arr.splice(3, 2);
 console.log(arr);
 
 /*Задание 3
@@ -47,9 +47,18 @@ for (let i = 0; i < arr.length; i++) {
 console.log(`Cумма элементов равна: ${sum}`);
 console.log(`Минимальное значение равно: ${Math.min(...arr)}`);
 
-if (arr.includes(3)===true) {
+if (arr.includes(3) === true) {
     console.log('Содержит число 3 в массиве');
 }
-else{
+else {
     console.log('Не содержит число 3 в массиве');
+}
+
+/**Необязательное задание. *
+Необходимо вывести горку в консоль (используя цикл for), как показано на рисунке, только у вашей горки должно быть 20 рядов, а не 5 */
+
+let a = 'x';
+console.log(a);
+for (let i = 0; i < 19; i++) {
+    console.log(a = a + 'x');
 }
